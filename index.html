@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <h1 id="h1-header">To Do List</h1>
+            <div class="header-right">
+                <p id="login-text">Login</p>
+                <div id="profile-btn" class="profile-circle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div id="input-section">
+            <h2>Add New Task</h2>
+            <form id="todo-form">
+                <div class="form-group">
+                    <label for="time-input">Time:</label>
+                    <input type="time" id="time-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-input">Task Description:</label>
+                    <textarea id="task-input" rows="4" placeholder="Enter your task here..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority-select">Priority:</label>
+                    <select id="priority-select" required>
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="add-btn">Add Task</button>
+            </form>
+        </div>
+
+        <div id="tasks-section">
+            <div class="section-header">
+                <h2>Your Tasks</h2>
+                <button id="delete-all-btn">Delete All</button>
+            </div>
+            <div id="tasks-list">
+                <!-- Tasks will appear here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
